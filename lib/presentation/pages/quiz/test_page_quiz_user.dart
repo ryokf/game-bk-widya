@@ -76,34 +76,34 @@ class _TestQuizUserState extends State<TestQuizUser> {
                         Text(widget.username)
                       ],
                     ),
-                    Container(
-                      height: 150,
-                      width: 150,
-                      child: CountDownProgressIndicator(
-                        valueColor: Colors.red,
-                        backgroundColor: Colors.white,
-                        controller: _controller,
-                        initialPosition: 0,
-                        duration: 120,
-                        text: 'detik',
-                        onComplete: () {
-                          Navigator.push(context,
-                              MaterialPageRoute(builder: (context) {
-                            return ResultPage(
-                              result: result,
-                              score: widget.score,
-                              id: widget.id,
-                              username: widget.username,
-                              level: widget.level,
-                              password: widget.password,
-                              email: widget.email,
-                            );
-                          })).then((value) {
-                            setState(() {});
-                          });
-                        },
-                      ),
-                    ),
+                    // Container(
+                    //   height: 150,
+                    //   width: 150,
+                    //   child: CountDownProgressIndicator(
+                    //     valueColor: Colors.red,
+                    //     backgroundColor: Colors.white,
+                    //     controller: _controller,
+                    //     initialPosition: 0,
+                    //     duration: 120,
+                    //     text: 'detik',
+                    //     onComplete: () {
+                    //       Navigator.push(context,
+                    //           MaterialPageRoute(builder: (context) {
+                    //         return ResultPage(
+                    //           result: result,
+                    //           score: widget.score,
+                    //           id: widget.id,
+                    //           username: widget.username,
+                    //           level: widget.level,
+                    //           password: widget.password,
+                    //           email: widget.email,
+                    //         );
+                    //       })).then((value) {
+                    //         setState(() {});
+                    //       });
+                    //     },
+                    //   ),
+                    // ),
                     SizedBox(
                       height: 50,
                     ),

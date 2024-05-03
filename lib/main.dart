@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: SplashScreen(),
+      home: HomePage(id: "1", username: "widya", password: "123", email: "ryokf@gmail.com", level: "1", score: "123"),
       // initialRoute: SplashScreen.routeName,
       // routes: {
       //   SplashScreen.routeName: (context) => SplashScreen(),

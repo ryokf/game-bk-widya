@@ -88,28 +88,15 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: SafeArea(
         child: Center(
-          child: _widgetOptions.elementAt(_selectedIndex),
-        ),
+          child: HomeMain(
+        id: widget.id,
+        username: widget.username,
+        score: widget.score,
+        password: widget.password,
+        email: widget.email,
+        level: widget.level,
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        // type: BottomNavigationBarType.fixed,
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Beranda',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.note_add),
-            label: 'Buat Quiz',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: 'Pustaka',
-          ),
-        ],
-        currentIndex: _selectedIndex,
-        selectedItemColor: primaryColor,
-        onTap: _onItemTapped,
+        ),
       ),
     );
   }

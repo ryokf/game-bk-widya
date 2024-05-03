@@ -74,34 +74,34 @@ class _TestState extends State<Test> {
                         Text(widget.username)
                       ],
                     ),
-                    Container(
-                      height: 150,
-                      width: 150,
-                      child: CountDownProgressIndicator(
-                        valueColor: Colors.red,
-                        backgroundColor: Colors.white,
-                        controller: _controller,
-                        initialPosition: 0,
-                        duration: 120,
-                        text: 'detik',
-                        onComplete: () {
-                          Navigator.push(context,
-                              MaterialPageRoute(builder: (context) {
-                            return ResultPage(
-                              result: result,
-                              score: widget.score,
-                              id: widget.id,
-                              username: widget.username,
-                              password: widget.password,
-                              email: widget.email,
-                              level: widget.level,
-                            );
-                          })).then((value) {
-                            setState(() {});
-                          });
-                        },
-                      ),
-                    ),
+                    // Container(
+                    //   height: 150,
+                    //   width: 150,
+                    //   child: CountDownProgressIndicator(
+                    //     valueColor: Colors.red,
+                    //     backgroundColor: Colors.white,
+                    //     controller: _controller,
+                    //     initialPosition: 0,
+                    //     duration: 120,
+                    //     text: 'detik',
+                    //     onComplete: () {
+                    //       Navigator.push(context,
+                    //           MaterialPageRoute(builder: (context) {
+                    //         return ResultPage(
+                    //           result: result,
+                    //           score: widget.score,
+                    //           id: widget.id,
+                    //           username: widget.username,
+                    //           password: widget.password,
+                    //           email: widget.email,
+                    //           level: widget.level,
+                    //         );
+                    //       })).then((value) {
+                    //         setState(() {});
+                    //       });
+                    //     },
+                    //   ),
+                    // ),
                     SizedBox(
                       height: 50,
                     ),

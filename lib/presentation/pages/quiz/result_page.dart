@@ -28,13 +28,7 @@ class ResultPage extends StatefulWidget {
 
 class _ResultPageState extends State<ResultPage> {
   Future<void> _tambahskor(String score) async {
-    String Url =
-        "http://192.168.67.214/belajar/HiTech-hmti2024/frontend/HealtyQuizz-main/healty_quizz/lib/data/tambah_score.php";
 
-    final response = await http
-        .post(Uri.parse(Url), body: {"id": widget.id, "score": score});
-
-    if (response.statusCode == 200) {
       Navigator.push(context, MaterialPageRoute(builder: (context) {
         return HomePage(
             id: widget.id,
@@ -45,7 +39,6 @@ class _ResultPageState extends State<ResultPage> {
             score: score);
       }));
     }
-  }
 
   @override
   Widget build(BuildContext context) {

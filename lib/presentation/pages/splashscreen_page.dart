@@ -80,7 +80,7 @@ class SplashScreen extends StatelessWidget {
                     //     context, RegisterPage.routeName);
                     Navigator.pushReplacement(context,
                         MaterialPageRoute(builder: (context) {
-                      return HomePage(id: "1", username: "ryokf", password: "12345", email: "ryokf@gmail.com", level: "1", score: "120");
+                      return HomePage(id: "1", username: "ryok", password: "123", email: "ryok@gmail.com", level: "1", score: "123");
                     }));
                   },
                   child: Text(
