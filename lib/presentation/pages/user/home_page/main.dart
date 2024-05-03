@@ -70,7 +70,7 @@ class _HomeMainState extends State<HomeMain> {
 
   void _getAllDataBiologi(String username) async {
     final String Url =
-        "https://script.googleusercontent.com/macros/echo?user_content_key=RcjKMKaINZ-dt9TW9nz2vQUxcT5misiR0E9IqXT_qnlXHCTktSglOT_yHTOeDMyBCZw4oDZEHKpXZQdDWUIz61cRvvhccldRm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnK14ioERKJ6foQExf1tpoc--qUW6Y-tC5Y-SpXokcZnoPObxCHdFVsr_KXoE8N0xa7tfMd2IMigE5pMmS0HU2nyQucmmppdS_w&lib=MBhYIpOyECp2ihwhpyqSqK-5ZvmFWs76M";
+        "https://script.google.com/macros/s/AKfycbzXOh6i9GWvY0DflXhgsLPQ92mGNLnHd0tRcvFyeo3r4zZakE0JdchS2PcSqkUt9er3HQ/exec";
     try {
       setState(() {
         _isLoading = true;
