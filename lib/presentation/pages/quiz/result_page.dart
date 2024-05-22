@@ -60,7 +60,7 @@ class _ResultPageState extends State<ResultPage> {
                 height: 20,
               ),
               Text(
-                "Hore !!! Nilai Kamu " + widget.result.toString(),
+                "kuisionermu sudah selesai, tanggapan anda akan kami evluasi",
                 style: GoogleFonts.montserrat(fontSize: 20),
               ),
               ElevatedButton(

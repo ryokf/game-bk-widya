@@ -146,11 +146,11 @@ class _TestQuizUserState extends State<TestQuizUser> {
                       onTap: () {
                         navigate("c");
                       },
-                      child: OptionWidget(
+                      child: widget.question[index]["option_c"]?.toString() != null ? OptionWidget(
                           optionChar: "C",
                           optionDetail:
                               widget.question[index]["option_c"].toString(),
-                          color: Colors.blue),
+                          color: Colors.blue) : SizedBox(),
                     ),
                     SizedBox(
                       height: 8,

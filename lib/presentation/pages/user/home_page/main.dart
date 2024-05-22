@@ -48,25 +48,6 @@ class _HomeMainState extends State<HomeMain> {
     _cariquiz.dispose();
   }
 
-  Future<void> _registeradmin() async {
-    String Url =
-        "http://192.168.67.214/belajar/HiTech-hmti2024/frontend/HealtyQuizz-main/healty_quizz/lib/data/register_admin.php";
-    final response = await http.post(Uri.parse(Url), body: {
-      "username": widget.username,
-      "id": widget.id,
-    });
-
-    if (response.statusCode == 200) {
-      showDialog(
-          context: context,
-          builder: (context) {
-            return AlertDialog(
-              title: Text("Selamt anda telah berhasil menjadi Admin"),
-              content: Text("Ayo manfaatkan fitur admin dengan sebaik mungkin"),
-            );
-          });
-    }
-  }
 
   void _getAllDataBiologi(String username) async {
     final String Url =
@@ -78,6 +59,7 @@ class _HomeMainState extends State<HomeMain> {
 
       if(_isLoading == true){
         showDialog(
+            barrierDismissible: false,
             context: context,
             builder: (context) {
               return AlertDialog(
